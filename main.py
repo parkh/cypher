@@ -33,7 +33,6 @@ def coder(text, key, encode):
 
 def main():
     option = input('Введіть `1` якщо Ви хочете зашифрувати, і `0` якщо ви хочете розшифрувати: ')
-    print('\n')
     if option == '1':
         encode = True
     elif option == '0':
@@ -44,7 +43,6 @@ def main():
 
 
     date = input('Введіть дату (dd/mm/yyyy): ')
-    print('\n')
     try:
         date_object = datetime.strptime(date, '%d/%m/%Y')
     except:
@@ -54,7 +52,6 @@ def main():
 
 
     text = input('Введіть текст: ')
-    print('\n')
     text = text.lower()
 
     result = coder(text, key, encode)
